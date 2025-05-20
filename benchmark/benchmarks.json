@@ -1,0 +1,4 @@
+{
+    "rsv5-1": "--pdb rsvf_site5.pdb --contigs 11,A163-181,30",
+    "rsv5-2": "--pdb rsvf_site5.pdb --contigs 0-40,A163-181,25-50 --len 55-100"
+}

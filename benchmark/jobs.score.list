@@ -1,0 +1,3 @@
+source activate ampere; python /home/jue/git/inpaint/benchmark//af2_metrics.py --outcsv run2/af2_metrics.csv.0 run2/score.list.0
+source activate ampere; python /home/jue/git/inpaint/benchmark//af2_metrics.py --outcsv run2/af2_metrics.csv.20 run2/score.list.20
+source activate ampere; python /home/jue/git/inpaint/benchmark//af2_metrics.py --outcsv run2/af2_metrics.csv.40 run2/score.list.40
