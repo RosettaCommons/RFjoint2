@@ -32,7 +32,7 @@ Ensure that you have either [Anaconda or Miniconda](https://conda.io/projects/co
 You also need to install [NVIDIA's implementation of SE(3)-Transformers](https://developer.nvidia.com/blog/accelerating-se3-transformers-training-using-an-nvidia-open-source-model-implementation/) Here is how to install the NVIDIA SE(3)-Transformer code:
 
 ```
-conda env create -f env/SE3nv_rfj.yml
+conda env create -f env/SE3nv_rfj.yaml
 
 conda activate SE3nv_rfj
 cd env
