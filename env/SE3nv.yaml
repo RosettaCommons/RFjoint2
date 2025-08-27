@@ -1,18 +1,21 @@
-name: SE3nv
+name: SE3nv_rfj
 channels:
-  - defaults
-  - conda-forge
   - pytorch
-  - dglteam
   - nvidia
+  - dglteam
+  - conda-forge
+  - defaults
 dependencies:
-  - python=3.9
-  - pytorch=1.9
-  - torchaudio
+  - python=3.10
+  - numpy=1.26
+  - pandas
+  - pytorch=2.2
   - torchvision
-  - cudatoolkit=11.1
+  - torchaudio
+  - pytorch-cuda=12.1
   - dgl-cuda11.1
+  - icecream
   - pip
   - pip:
-    - hydra-core
-    - pyrsistent
+      - hydra-core
+      - pyrsistent

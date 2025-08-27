@@ -32,10 +32,10 @@ Ensure that you have either [Anaconda or Miniconda](https://conda.io/projects/co
 You also need to install [NVIDIA's implementation of SE(3)-Transformers](https://developer.nvidia.com/blog/accelerating-se3-transformers-training-using-an-nvidia-open-source-model-implementation/) Here is how to install the NVIDIA SE(3)-Transformer code:
 
 ```
-conda env create -f env/SE3nv.yml
+conda env create -f env/SE3nv_rfj.yml
 
-conda activate SE3nv
-cd env/SE3Transformer
+conda activate SE3nv_rfj
+cd env
 pip install --no-cache-dir -r requirements.txt
 python setup.py install
 
@@ -65,7 +65,7 @@ A baseline execution of the script requires 3 pieces of information, which are p
 3. A location where output from the script should be written. (`--out`)
 
 ```
-python inpaint.py --pdb 2KL8.pdb --contigs A25-50,10,A61-79 --out pdbs_test/auto_out 
+python inpaint.py --pdb examples/pdbs/2KL8.pdb  --contigs A25-50,10,A61-79 --out  examples/out
 ```
 Let's dissect this line. 
 
