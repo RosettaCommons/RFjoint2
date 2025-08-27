@@ -1,9 +1,9 @@
 #!/bin/bash
 
-conda activate SE3nv
+conda activate SE3nv_rfj
 
 path_to_pdb="./pdbs/2KL8.pdb"
-output_path="./example_outputs/inpainting_test"
+output_path="./inpainting_output"
 number_of_designs=1
 contig_string="A1-20,20-50,A30-60"
 

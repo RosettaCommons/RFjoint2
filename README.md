@@ -42,7 +42,7 @@ python setup.py install
 ```
 Anytime you run RFjoint2 you should be sure to activate this conda environment by running the following command:
 ```
-conda activate SE3nv
+conda activate SE3nv_rfj
 ```
 Total setup should take less than 30 minutes on a standard desktop computer.
 Note: Due to the variation in GPU types and drivers that users have access to, we are not able to make one environment that will run on all setups. As such, we are only providing a yml file with support for CUDA 11.1 and leaving it to each user to customize it to work on their setups. This customization will involve changing the cudatoolkit and (possibly) the PyTorch version specified in the yml file.
@@ -119,6 +119,10 @@ However, there are many more things that can be done with the contig string.
 `--min_decoding_distance`: Currently, by default, we decode multiple amino acids simultaneously when doing autoregressive sequence design. This value specifies the minimum distance apart two residues can be while being simultaneously decoded. 15A is the default, and is pretty good. If you want to be more conservative (but also slower), set this to a higher value.
 
 All other flags can generally be left as default, but either dive into the code or ask us if you have any questions.
+
+## Other uses
+RFjoint2 has been used to design beta barrels and to scaffold multiple motifs.
+See the example scripts in `/examples/` for details.
 
 ## FAQs
 1. 'How much protein can inpainting inpaint?' 

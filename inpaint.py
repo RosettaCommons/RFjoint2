@@ -63,7 +63,7 @@ SE3_PARAMS = {'num_layers':3,\
               'num_edge_features' : 64}
 
 TRUNK_PARAMS['SE3_param'] = SE3_PARAMS
-DEFAULT_CKPT = './checkpoints/InpaintingApril22.pt'
+DEFAULT_CKPT = f'{script_dir}/checkpoints/InpaintingApril22.pt'
 # for perlmutter
 #DEFAULT_CKPT = '/global/cfs/cdirs/m4129/software/trdesign/autofold/InpaintingApril22.pt'
 
